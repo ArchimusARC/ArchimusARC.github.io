@@ -18,3 +18,8 @@ section {
 #video{
 	border: 3px blue;
 }
+
+h1 {
+	color: #f4dc26;
+	font-size: 40px;
+}

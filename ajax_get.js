@@ -26,13 +26,11 @@ $(window).on("load", function(){
 				else {
 					$("#type").text(data.types[0].type.name);
 				}
-
-				alert("Todo cargado");
 			}, "json");
 	}
 
 
-	var current_pkmn = 549;
+	var current_pkmn = 25;
 	get_data(current_pkmn);
 	
 	$("#next_btn").on({
