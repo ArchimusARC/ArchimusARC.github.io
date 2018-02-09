@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PKMN  GET AJAX</title>
+	<style type="text/css">
+		table, td, th{
+				border:1px solid black;
+				border-collapse: collapse;
+			}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="ajax_get.js" type="text/javascript"></script>
+	
+
+</head>
+
+<body>
+
+	<table> 
+		<tr>
+			<th>ID</th>
+			<th>Normal Sprite</th>
+			<th>Shiny Sprite</th>
+			<th>Name</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>
+				<span id ="pkmn_id"></span>
+			</td>
+			<td>
+				<img id = "nsprite" src="" alt="Sprite not found">
+			</td>
+			<td>
+				<img id = "ssprite" src="" alt="Sprite not found">
+			</td>
+			<td>
+				<span id ="name"></span>
+			</td>
+			<td>
+				<span id = "type"></span>
+			</td>
+		</tr>
+	</table>
+
+		<button id="last_btn">Last</button>
+		<input id="search" type="text" name="search">
+		<button id="search_btn">Search</button>
+		<button id="next_btn">Next</button>
+
+
+</body>
+
+</html>
