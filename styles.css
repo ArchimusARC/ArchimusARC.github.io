@@ -1,0 +1,20 @@
+table, td, th{
+				border:1px solid black;
+				border-collapse: collapse;
+				background-color: #f4dc26;
+			}
+
+html {
+	background-image: url("pika.gif");
+}
+
+section {
+	position: relative;
+	justify-content: center;
+	display: flex;
+	flex-flow: column;
+}
+
+#video{
+	border: 3px blue;
+}

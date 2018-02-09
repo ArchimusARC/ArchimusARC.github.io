@@ -1,13 +1,8 @@
 $(window).on("load", function(){
-
 	
 	function get_data(pkmn_id) {
 		$.get("https://www.pokeapi.co/api/v2/pokemon/"+pkmn_id+"/",
 			function(data) {
-				console.log(data.name);
-				console.log(data.id);
-				console.log(data.types[0].type.name);
-
 				if(data.id == null) {
 					$("#pkmn_id").text("No hay datos");
 				}
@@ -45,7 +40,6 @@ $(window).on("load", function(){
 			if(current_pkmn < 802) {
 				current_pkmn+=1;
 				get_data(current_pkmn);
-				console.log(current_pkmn);
 			}
 			else alert("This is the last pokemon of this Pokedex");
 			
@@ -57,7 +51,6 @@ $(window).on("load", function(){
 			if(current_pkmn > 1) {
 				current_pkmn-=1;
 				get_data(current_pkmn);
-				console.log(current_pkmn);
 			}
 			else alert("This is the first pokemon of the Pokedex")
 		}
@@ -70,7 +63,6 @@ $(window).on("load", function(){
 				get_data(current_pkmn);
 				console.log(current_pkmn);
 			}
-			else alert("No pokemon with that number");
 		}
 	});
 })
